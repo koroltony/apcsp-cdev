@@ -14,7 +14,7 @@ void getTestInput(int argc, char* argv[], float* a, int* b)
 
 // add your areaOfCircle function here - it must NOT printf, instead it must
 // return the result to be printed in main
-float areaFunction(float radius){
+float areaOfCircle(float radius){
 float a = radius*radius*M_PI;
 return a;
 }
@@ -37,7 +37,7 @@ int main(int argc, char* argv[])
   // start and end
 float r;
 for (int i = 0; i < reps; i++){
-r = areaFunction(start+i);
+r = areaOfCircle(start+i);
 printf("%f\n", r);
 }
 
